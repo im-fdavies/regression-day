@@ -3788,6 +3788,13 @@
       ],
       "value": ""
     }, {
+      "id": "e5e5f3b8-e678-42d7-88cb-d6e308f175ac",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": "5000"
+    }, {
       "id": "68cc4b9d-920b-4075-85e2-71b30e9d6282",
       "comment": "",
       "command": "open",
