@@ -5945,7 +5945,7 @@
       "id": "e8bf4ff8-95e4-439d-8ac7-4e0e44e9b9ca",
       "comment": "",
       "command": "click",
-      "target": "css=form > ul > li:nth-child(1) > label",
+      "target": "id=acf-field_im-editorial-ratings-options-rating-type-field_-rating-type",
       "targets": [
         ["css=form > ul > li:nth-child(3) > label", "css:finder"],
         ["xpath=//div[@id='editorial-ratings-admin-settings']/form/ul/li[3]/label", "xpath:idRelative"],
@@ -5957,14 +5957,14 @@
       "id": "17a6202c-9797-4f13-b433-cad33dbd8e74",
       "comment": "",
       "command": "check",
-      "target": "id=reviews",
+      "target": "xpath=//input[@value='reviews']",
       "targets": [],
       "value": ""
     }, {
       "id": "1b5188fa-66c8-4dc4-b66d-2b81a42cdd06",
       "comment": "",
       "command": "click",
-      "target": "id=submit",
+      "target": "id=publish",
       "targets": [
         ["id=submit", "id"],
         ["name=im-editorial-ratings-admin-settings-submit", "name"],
@@ -5987,6 +5987,13 @@
       "comment": "",
       "command": "selectWindow",
       "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5adfbaf5-37a1-49d4-b5b5-5e25b1a3c8c9",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
       "targets": [],
       "value": ""
     }, {
@@ -6123,7 +6130,7 @@
       "id": "d5ee8da9-6a85-451d-b942-4d75dd709204",
       "comment": "",
       "command": "click",
-      "target": "css=form > ul > li:nth-child(1) > label",
+      "target": "id=acf-field_im-editorial-ratings-options-rating-type-field_-rating-type",
       "targets": [
         ["css=form > ul > li:nth-child(3) > label", "css:finder"],
         ["xpath=//div[@id='editorial-ratings-admin-settings']/form/ul/li[3]/label", "xpath:idRelative"],
@@ -6135,14 +6142,14 @@
       "id": "2cc660c8-ac08-4681-8d4f-c91d8a047b0d",
       "comment": "",
       "command": "check",
-      "target": "id=reviews",
+      "target": "xpath=//input[@value='reviews']",
       "targets": [],
       "value": ""
     }, {
       "id": "186a2ea3-f9bb-47d9-b60b-574cbd67f889",
       "comment": "",
       "command": "click",
-      "target": "id=submit",
+      "target": "id=publish",
       "targets": [
         ["id=submit", "id"],
         ["name=im-editorial-ratings-admin-settings-submit", "name"],
@@ -6165,6 +6172,13 @@
       "comment": "",
       "command": "selectWindow",
       "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "575edeac-0f0f-4646-9e08-dfebdd5e71ed",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
       "targets": [],
       "value": ""
     }, {
@@ -6496,26 +6510,25 @@
       "id": "cd2cda24-0b30-4f0c-80a8-c3d529288c04",
       "comment": "",
       "command": "click",
-      "target": "css=form > ul > li:nth-child(1) > label",
+      "target": "id=acf-field_im-editorial-ratings-options-rating-type-field_-rating-type",
       "targets": [
-        ["css=form > ul > li:nth-child(3) > label", "css:finder"],
-        ["xpath=//div[@id='editorial-ratings-admin-settings']/form/ul/li[3]/label", "xpath:idRelative"],
-        ["xpath=//li[3]/label", "xpath:position"],
-        ["xpath=//label[contains(.,'Expanded: Verdict & star ratings')]", "xpath:innerText"]
+        ["css=.acf-radio-list > li:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='acf-im-editorial-ratings-options']/div[2]/div/div[2]/div/div/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/ul/li", "xpath:position"]
       ],
       "value": ""
     }, {
       "id": "aaea8c5a-71c7-4430-b84b-5f59334957be",
       "comment": "",
       "command": "check",
-      "target": "id=reviews",
+      "target": "xpath=//input[@value='reviews']",
       "targets": [],
       "value": ""
     }, {
       "id": "2de99253-81e7-4bb1-8b05-7a53a1898305",
       "comment": "",
       "command": "click",
-      "target": "id=submit",
+      "target": "id=publish",
       "targets": [
         ["id=submit", "id"],
         ["name=im-editorial-ratings-admin-settings-submit", "name"],
@@ -6538,6 +6551,13 @@
       "comment": "",
       "command": "selectWindow",
       "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6faa0ddb-2542-4b01-8358-54fd378352cf",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
       "targets": [],
       "value": ""
     }, {
@@ -6747,7 +6767,7 @@
       "id": "092d5064-901b-49da-98ba-75a4a213d623",
       "comment": "",
       "command": "click",
-      "target": "css=form > ul > li:nth-child(1) > label",
+      "target": "id=acf-field_im-editorial-ratings-options-rating-type-field_-rating-type",
       "targets": [
         ["css=form > ul > li:nth-child(3) > label", "css:finder"],
         ["xpath=//div[@id='editorial-ratings-admin-settings']/form/ul/li[3]/label", "xpath:idRelative"],
@@ -6759,14 +6779,14 @@
       "id": "ff1dbb30-cccc-4472-ba7a-9e00952e07ca",
       "comment": "",
       "command": "check",
-      "target": "id=reviews",
+      "target": "xpath=//input[@value='reviews']",
       "targets": [],
       "value": ""
     }, {
       "id": "1c34f121-7889-4233-9ad0-2dff3f639f73",
       "comment": "",
       "command": "click",
-      "target": "id=submit",
+      "target": "id=publish",
       "targets": [
         ["id=submit", "id"],
         ["name=im-editorial-ratings-admin-settings-submit", "name"],
@@ -6789,6 +6809,13 @@
       "comment": "",
       "command": "selectWindow",
       "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2326303-881a-4ec0-8529-9b233dc7900c",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
       "targets": [],
       "value": ""
     }, {
@@ -6998,7 +7025,7 @@
       "id": "84720e39-6656-47bc-9650-5c9471b48a44",
       "comment": "",
       "command": "click",
-      "target": "css=form > ul > li:nth-child(1) > label",
+      "target": "id=acf-field_im-editorial-ratings-options-rating-type-field_-rating-type",
       "targets": [
         ["css=form > ul > li:nth-child(3) > label", "css:finder"],
         ["xpath=//div[@id='editorial-ratings-admin-settings']/form/ul/li[3]/label", "xpath:idRelative"],
@@ -7010,14 +7037,14 @@
       "id": "929cf932-8277-426a-a0c5-fa9b76aa41e8",
       "comment": "",
       "command": "check",
-      "target": "id=reviews",
+      "target": "xpath=//input[@value='reviews']",
       "targets": [],
       "value": ""
     }, {
       "id": "d806f7f3-6fce-4b62-a3f1-6433b7a006e4",
       "comment": "",
       "command": "click",
-      "target": "id=submit",
+      "target": "id=publish",
       "targets": [
         ["id=submit", "id"],
         ["name=im-editorial-ratings-admin-settings-submit", "name"],
@@ -7040,6 +7067,13 @@
       "comment": "",
       "command": "selectWindow",
       "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c6454f8-22dc-4eab-b96e-4f06e840d35b",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
       "targets": [],
       "value": ""
     }, {
@@ -12016,7 +12050,7 @@
       "id": "0d1981a8-9251-4d8c-834c-0f7fdf984e03",
       "comment": "",
       "command": "click",
-      "target": "css=.issue_actions",
+      "target": "css=.issue-actions-trigger",
       "targets": [
         ["id=actions_96748", "id"],
         ["linkText=Actions", "linkText"],
