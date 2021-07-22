@@ -3491,41 +3491,47 @@
       "id": "be2446cd-3018-401b-9fad-5cabe9571347",
       "comment": "",
       "command": "click",
-      "target": "css=form > ul > li:nth-child(1) > label",
+      "target": "id=acf-field_im-editorial-ratings-options-rating-type-field_-rating-type",
       "targets": [
-        ["css=form > ul > li:nth-child(3) > label", "css:finder"],
-        ["xpath=//div[@id='editorial-ratings-admin-settings']/form/ul/li[3]/label", "xpath:idRelative"],
-        ["xpath=//li[3]/label", "xpath:position"],
-        ["xpath=//label[contains(.,'Expanded: Verdict & star ratings')]", "xpath:innerText"]
+        ["id=acf-field_im-editorial-ratings-options-rating-type-field_-rating-type", "id"],
+        ["css=#acf-field_im-editorial-ratings-options-rating-type-field_-rating-type", "css:finder"],
+        ["xpath=//input[@id='acf-field_im-editorial-ratings-options-rating-type-field_-rating-type']", "xpath:attributes"],
+        ["xpath=//div[@id='acf-im-editorial-ratings-options']/div[2]/div/div[2]/div/div/div[2]/ul/li/label/input", "xpath:idRelative"],
+        ["xpath=//li/label/input", "xpath:position"]
       ],
       "value": ""
     }, {
       "id": "d27c4617-fcc4-46cb-a9f1-43828baafcfa",
       "comment": "",
       "command": "check",
-      "target": "id=reviews",
-      "targets": [],
+      "target": "xpath=//input[@value='reviews']",
+      "targets": [
+        ["id=acf-field_im-editorial-ratings-options-rating-type-field_-apply-to-reviews", "id"],
+        ["css=#acf-field_im-editorial-ratings-options-rating-type-field_-apply-to-reviews", "css:finder"],
+        ["xpath=//input[@id='acf-field_im-editorial-ratings-options-rating-type-field_-apply-to-reviews']", "xpath:attributes"],
+        ["xpath=//div[@id='acf-im-editorial-ratings-options']/div[2]/div/div[2]/div/div[2]/div[2]/ul/li[9]/label/input", "xpath:idRelative"],
+        ["xpath=//li[9]/label/input", "xpath:position"]
+      ],
       "value": ""
     }, {
       "id": "4d3942d0-2dc4-4e78-8851-c50cc45d9e0f",
       "comment": "",
       "command": "uncheck",
-      "target": "id=venue",
+      "target": "xpath=//input[@value='venue']",
       "targets": [],
       "value": ""
     }, {
       "id": "6f666c1d-050d-4adc-ad8c-3b564cd47127",
       "comment": "",
       "command": "click",
-      "target": "id=submit",
+      "target": "id=publish",
       "targets": [
-        ["id=submit", "id"],
-        ["name=im-editorial-ratings-admin-settings-submit", "name"],
-        ["css=#submit", "css:finder"],
-        ["xpath=//button[@id='submit']", "xpath:attributes"],
-        ["xpath=//div[@id='editorial-ratings-admin-settings']/form/ul/li[6]/button", "xpath:idRelative"],
-        ["xpath=//li[6]/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Save Changes')]", "xpath:innerText"]
+        ["id=publish", "id"],
+        ["name=publish", "name"],
+        ["css=#publish", "css:finder"],
+        ["xpath=//input[@id='publish']", "xpath:attributes"],
+        ["xpath=//div[@id='publishing-action']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
       ],
       "value": ""
     }, {
@@ -11959,73 +11965,82 @@
     "id": "cf81d7fd-140a-4a56-9111-aae5c77b5d73",
     "name": "Jira-Mark Done",
     "commands": [{
-      "id": "f1e41b63-c6ba-4c16-af44-81939d12f524",
+      "id": "21949cd7-f1bf-4ecf-a839-a2222e8ecd9d",
       "comment": "",
-      "command": "open",
-      "target": "https://immediateco.atlassian.net/browse/TST-4863",
+      "command": "//open",
+      "target": "https://immediateco.atlassian.net/browse/RA-1096",
       "targets": [],
       "value": ""
     }, {
-      "id": "d02aef1f-7cc0-46fb-935d-a0151cd1b3b5",
+      "id": "16c41263-7a20-4aa4-87e4-0257e5d76415",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1680x978",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "589c9f47-2cc9-4457-a358-6f4e4b40ba4e",
       "comment": "",
       "command": "click",
-      "target": "css=.sc-flvzOl:nth-child(1) .sc-eNhIyc",
+      "target": "css=.css-1ujqpe8 > .JrBgn",
       "targets": [
-        ["css=.sc-flvzOl:nth-child(1) .sc-eNhIyc", "css:finder"],
-        ["xpath=//div[@id='ak-main-content']/div/div/div[2]/div[2]/div[2]/div/div/div/div/div[5]/div[4]/div/div[3]/ul/div/div/div/div[3]/div/div", "xpath:idRelative"],
-        ["xpath=//ul/div/div/div/div[3]/div/div", "xpath:position"]
+        ["css=.css-1ujqpe8 > .JrBgn", "css:finder"],
+        ["xpath=//div[@id='jira-issue-header-actions']/div/div/div/div/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/div/div/div/div/div/button/span/span", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "429d957d-d7c6-401a-b6d5-63a8cd9e4bf7",
-      "comment": "",
-      "command": "storeText",
-      "target": "css=.elro8wh1 > .css-19r5em7",
-      "targets": [],
-      "value": "btnValue"
-    }, {
-      "id": "8996f62a-48b4-435a-8a81-cf97ba5fd65b",
-      "comment": "",
-      "command": "if",
-      "target": "${btnValue} === 'To Do'",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "20816900-addf-47e6-ab67-f3ae31dae636",
-      "comment": "",
-      "command": "echo",
-      "target": "hit",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "1e2da38f-ec60-49f2-a7c1-86a25688555d",
+      "id": "48cecb46-d442-4319-94a0-f9787c261e06",
       "comment": "",
       "command": "click",
-      "target": "css=.elro8wh1 > .css-19r5em7",
+      "target": "css=div:nth-child(4) > .Item-z6qfkt-1 .ItemParts__Content-sc-14xek3m-5",
       "targets": [
-        ["css=.elro8wh1 > .css-19r5em7", "css:finder"],
-        ["xpath=//div[@id='ak-main-content']/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div/div/div/button/span", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div/div/div/button/span", "xpath:position"],
-        ["xpath=//span[contains(.,'To Do')]", "xpath:innerText"]
+        ["css=div:nth-child(4) > .Item-z6qfkt-1 .ItemParts__Content-sc-14xek3m-5", "css:finder"],
+        ["xpath=//body[@id='jira']/div[12]/div[6]/div/div/div[5]/div/div/div[4]/a/span/span", "xpath:idRelative"],
+        ["xpath=//div[4]/a/span/span", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "a4f350a6-8546-4186-b7de-a1228ab18324",
+      "id": "0855e7c3-7dee-468a-af38-f7ae9b9aedcc",
       "comment": "",
-      "command": "click",
-      "target": "xpath=//div[4]/span/div/span/span",
+      "command": "mouseOver",
+      "target": "css=.issue_actions",
       "targets": [
-        ["css=#react-select-3-option-3 .\\_bfhkaxbu > .\\_1e0c1o8l", "css:finder"],
-        ["xpath=//div[@id='react-select-3-option-3']/span/div/span/span", "xpath:idRelative"],
-        ["xpath=//div[4]/span/div/span/span", "xpath:position"]
+        ["css=.issue_actions", "css:finder"],
+        ["xpath=//tr[@id='issuerow96730']/td[7]", "xpath:idRelative"],
+        ["xpath=//td[7]", "xpath:position"],
+        ["xpath=//td[contains(.,'Actions')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "ea20d071-3417-4aa2-905a-ea73ad3ef02c",
+      "id": "0d1981a8-9251-4d8c-834c-0f7fdf984e03",
       "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
+      "command": "click",
+      "target": "css=.issue_actions",
+      "targets": [
+        ["id=actions_96748", "id"],
+        ["linkText=Actions", "linkText"],
+        ["css=#actions_96748", "css:finder"],
+        ["xpath=//a[@id='actions_96748']", "xpath:attributes"],
+        ["xpath=//tr[@id='issuerow96748']/td[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/rest/api/1.0/issues/96748/ActionsAndOperations?atl_token=BN8I-V431-N1DU-BWGU_d8026a0518c88897fd45d53817a65e52ae5fbebe_lin')]", "xpath:href"],
+        ["xpath=//td[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Actions')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a3c0871-d410-4192-ae42-6ebdc38bf878",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Done",
+      "targets": [
+        ["linkText=Done", "linkText"],
+        ["css=.active > .aui-list-item-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Done')]", "xpath:link"],
+        ["xpath=//div[@id='actions_96730_drop']/div/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/secure/WorkflowUIDispatcher.jspa?id=96730&action=81&atl_token=BN8I-V431-N1DU-BWGU_d8026a0518c88897fd45d53817a65e52ae5fbebe_lin&returnUrl=https%3A%2F%2Fimmediateco.atlassian.net%2Fbrowse%2FRA-1096%3FoldIssueView%3Dtrue%26selectedIssueId%3D96730')]", "xpath:href"],
+        ["xpath=//div[12]/div/ul[2]/li/a", "xpath:position"]
+      ],
       "value": ""
     }]
   }, {
