@@ -1,7 +1,7 @@
 {
   "id": "4ce684ce-57af-44ee-8794-64d38a66120c",
   "version": "2.0",
-  "name": "Regession Day",
+  "name": "RegessionDay",
   "url": "https://slate.release.wcp.imdserve.com",
   "tests": [{
     "id": "ba7dcaec-20ad-4795-82e0-f78a98dabd6c",
@@ -6734,11 +6734,34 @@
       "targets": [],
       "value": "url"
     }, {
-      "id": "6dba1d30-c795-4944-9064-c9cf20bfd1cc",
+      "id": "dde252cb-72bd-44c3-8a2b-7a10bc71fb53",
       "comment": "",
       "command": "open",
-      "target": "https://search.google.com/structured-data/testing-tool#url=https://slate.release.wcp.imdserve.com/${url}",
+      "target": "https://search.google.com/test/rich-results",
       "targets": [],
+      "value": ""
+    }, {
+      "id": "6dba1d30-c795-4944-9064-c9cf20bfd1cc",
+      "comment": "",
+      "command": "type",
+      "target": "css=.JGptt:nth-child(2) > .Hvn9fb",
+      "targets": [
+        ["css=.JGptt:nth-child(2) > .Hvn9fb", "css:finder"],
+        ["xpath=//input[@type='url']", "xpath:attributes"],
+        ["xpath=//span[@id='AtnjWb']/c-wiz/div/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "https://slate.release.wcp.imdserve.com/${url}"
+    }, {
+      "id": "3cfe8ab6-6ffc-4525-85b5-3e7340f5109c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.VRqMy > .ZFr60d",
+      "targets": [
+        ["css=.VRqMy > .ZFr60d", "css:finder"],
+        ["xpath=//span[@id='AtnjWb']/c-wiz/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//c-wiz/div[2]/div/div[2]", "xpath:position"]
+      ],
       "value": ""
     }, {
       "id": "74c4be6c-1151-4fbe-a614-33db9b1d08ce",
@@ -7496,15 +7519,30 @@
     }, {
       "id": "600c389e-9db7-4c66-b1fc-54df3ce8828e",
       "comment": "",
-      "command": "click",
+      "command": "storeText",
       "target": "id=editable-post-name",
-      "targets": [
-        ["id=editable-post-name", "id"],
-        ["css=#editable-post-name", "css:finder"],
-        ["xpath=//span[@id='editable-post-name']", "xpath:attributes"],
-        ["xpath=//span[@id='sample-permalink']/a/span", "xpath:idRelative"],
-        ["xpath=//span/a/span", "xpath:position"]
-      ],
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "3110bd78-95f6-4a64-b8a1-ca7fa8972e59",
+      "comment": "",
+      "command": "open",
+      "target": "https://slate.release.wcp.imdserve.com/${url}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39bd5522-b8a0-454d-ad0f-cd81560c1191",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0dd2c00-0156-4bd9-8cf6-52f2d6f8ebb4",
+      "comment": "",
+      "command": "//click",
+      "target": "id=editable-post-name",
+      "targets": [],
       "value": ""
     }, {
       "id": "415ea211-a7b5-4922-bff3-e42bd71edc02",
@@ -7782,7 +7820,7 @@
     }, {
       "id": "33f66eb4-5724-43e7-bd94-b4d4c6a3e042",
       "comment": "",
-      "command": "echo",
+      "command": "open",
       "target": "https://slate.release.wcp.imdserve.com/${url}",
       "targets": [],
       "value": ""
@@ -8146,17 +8184,18 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "804870d1-f30f-4ad9-a098-02a596cc3470",
+      "id": "b49ee437-b719-41f1-867b-2dabff10da31",
       "comment": "",
-      "command": "click",
+      "command": "storeText",
       "target": "id=editable-post-name",
-      "targets": [
-        ["id=editable-post-name", "id"],
-        ["css=#editable-post-name", "css:finder"],
-        ["xpath=//span[@id='editable-post-name']", "xpath:attributes"],
-        ["xpath=//span[@id='sample-permalink']/a/span", "xpath:idRelative"],
-        ["xpath=//span/a/span", "xpath:position"]
-      ],
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "d74ac6fe-46ca-443c-8703-69babfe46e1f",
+      "comment": "",
+      "command": "open",
+      "target": "https://slate.release.wcp.imdserve.com/${url}",
+      "targets": [],
       "value": ""
     }, {
       "id": "0924a42d-fc50-4bfa-90db-567721117882",
@@ -8251,15 +8290,16 @@
     }, {
       "id": "56987fa4-d574-4db9-97e3-d1408ce5695e",
       "comment": "",
-      "command": "click",
+      "command": "storeText",
       "target": "id=editable-post-name",
-      "targets": [
-        ["id=editable-post-name", "id"],
-        ["css=#editable-post-name", "css:finder"],
-        ["xpath=//span[@id='editable-post-name']", "xpath:attributes"],
-        ["xpath=//span[@id='sample-permalink']/a/span", "xpath:idRelative"],
-        ["xpath=//span/a/span", "xpath:position"]
-      ],
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "91ea7941-1743-4adc-9e9e-8ccaacec7f61",
+      "comment": "",
+      "command": "open",
+      "target": "https://slate.release.wcp.imdserve.com/${url}",
+      "targets": [],
       "value": ""
     }, {
       "id": "68d5154f-e9c7-495c-8ee1-eddbf46679e2",
@@ -8526,15 +8566,23 @@
     }, {
       "id": "e3906c51-8ef4-4f64-8995-dec5a7685124",
       "comment": "",
-      "command": "click",
+      "command": "storeText",
       "target": "id=editable-post-name",
-      "targets": [
-        ["id=editable-post-name", "id"],
-        ["css=#editable-post-name", "css:finder"],
-        ["xpath=//span[@id='editable-post-name']", "xpath:attributes"],
-        ["xpath=//span[@id='sample-permalink']/a/span", "xpath:idRelative"],
-        ["xpath=//span/a/span", "xpath:position"]
-      ],
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "d4c5eaf2-8be2-4660-a946-f905fe06995b",
+      "comment": "",
+      "command": "open",
+      "target": "https://slate.release.wcp.imdserve.com/${url}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2b9ca25-f002-4129-8df9-2e3813bbd1ec",
+      "comment": "",
+      "command": "storeText",
+      "target": "id=editable-post-name",
+      "targets": [],
       "value": ""
     }, {
       "id": "ee299f25-af68-4ed6-8e95-24d811148414",
